@@ -195,7 +195,7 @@
                     <!-- To make this form functional, sign up at-->
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
-                    <form name="contact" data-netlify="true" id="contactForm">
+                    <form name="contact" data-netlify="true" data-netlify-recaptcha="true" id="contactForm">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" name="name" id="name" type="text"
@@ -233,6 +233,7 @@
                             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
                             </div>
                         </div>
+                        <div data-netlify-recaptcha="true"></div>
                         <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
                     </form>
                 </div>
